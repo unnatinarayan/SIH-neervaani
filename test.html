@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeerVaani</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        .section-about {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adds blur and transparency */
+            backdrop-filter: blur(5px);
+            z-index: -1;
+        }
+
+        .about-content {
+            max-width: 800px;
+            color: #fff;
+            text-align: right;
+            padding: 20px;
+        }
+
+        .head-content p {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .head-content img {
+            margin-top: 10px;
+            width: 40px;
+            height: auto;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .neer-para {
+            margin-bottom: 20px;
+        }
+
+        .neer-para p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .obj {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .obj1 {
+            text-align: right;
+        }
+
+        .obj-title h4 {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+
+        .obj1 p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section-about">
+        <video class="background-video" src="images/crop.mp4" autoplay muted loop></video>
+        <div class="background-overlay"></div>
+
+        <div class="about-content">
+            <div class="head-content">
+                <p>About NeerVaani</p>
+                <img src="images/leaf.png" alt="">
+            </div>
+            <h2>Welcome to NeerVaani!</h2>
+            <div class="neer-para">
+                <p>Your one-stop platform for tracking water footprints and promoting sustainable water use. Discover
+                    your water consumption, optimize agricultural practices, and make informed choices for a water-smart
+                    future.</p>
+            </div>
+            <div class="obj">
+                <div class="obj1">
+                    <div class="obj-title">
+                        <h4>Empowering Users</h4>
+                    </div>
+                    <p>Help individuals and farmers track water footprints and adopt efficient practices.</p>
+                </div>
+                <div class="obj1">
+                    <div class="obj-title">
+                        <h4>Promoting Sustainability</h4>
+                    </div>
+                    <p>Offer insights and recommendations for responsible water management and agriculture.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
